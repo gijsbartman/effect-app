@@ -1,20 +1,22 @@
 {
-  "name": "effect-app",
-  "version": "1.0.0",
-  "type": "module",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "tsc",
-    "start": "node dist/index.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.16.1",
-  "devDependencies": {
-    "@effect/language-service": "^0.62.3",
-    "effect": "^3.19.12",
-    "typescript": "^5.9.3"
-  }
+	"name": "effect-app",
+	"version": "1.0.0",
+	"type": "module",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "tsc",
+		"start": "node dist/index.js",
+		"dev": "tsx watch src/index.ts"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"packageManager": "pnpm@10.16.1",
+	"devDependencies": {
+		"@effect/language-service": "^0.62.3",
+		"effect": "^3.19.12",
+		"tsx": "^4.21.0",
+		"typescript": "^5.9.3"
+	}
 }

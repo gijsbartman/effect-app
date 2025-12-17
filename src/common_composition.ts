@@ -20,7 +20,7 @@ const divide2 = Unify.unify(divide)
  * Or with Effect.suspend
  * useful for lazy evaluation and more (read docs)
  */
-const divide3 = (a: number, b: number) =>
+export const divide3 = (a: number, b: number) =>
 	Effect.suspend(() => {
 		if (b === 0) {
 			return Effect.fail(new Error("Division by zero"))
