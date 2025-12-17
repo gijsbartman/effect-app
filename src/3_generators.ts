@@ -1,5 +1,5 @@
 import { Array, Effect } from "effect"
-import { divide3 } from "./common_composition.js"
+import { divide3 } from "./2_common_composition.js"
 
 /**
  * From previous lecture
