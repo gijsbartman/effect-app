@@ -170,3 +170,55 @@ const program2 = Effect.gen(function* () {
 )
 
 Effect.runPromise(program2)
+
+/**
+ * Avoiding dependency leaks
+ * & when not use a constructor (like with current user)
+ * https://lucasbarake.com/courses/practical-effect/37
+ * https://effect.website/docs/requirements-management/layers/#avoiding-requirement-leakage
+ */
+
+/**
+ * Simplifying Services with Effect.Service
+ * https://lucasbarake.com/courses/practical-effect/38
+ * https://effect.website/docs/requirements-management/layers/#simplifying-service-definitions-with-effectservice
+ */
+
+/**
+ * Optional services
+ * https://lucasbarake.com/courses/practical-effect/39
+ * https://effect.website/docs/requirements-management/services/#optional-services
+ * https://effect-ts.github.io/effect/effect/Context.ts.html#reference
+ */
+
+/**
+ * Scoped layers & ManagedRuntime
+ * https://lucasbarake.com/courses/practical-effect/40
+ * https://effect.website/docs/requirements-management/layers/#alternative-ways-to-define-a-service
+ * https://effect.website/docs/runtime/#managedruntime
+ */
+
+/**
+ * Accessors & Default Services
+ * https://lucasbarake.com/courses/practical-effect/41
+ *
+ * Like calling a function of a service directly,
+ * so you dont have to yield a database
+ * ```
+ * 	const database = yield* Database
+ *  yield* database.execute()
+ * ```
+ * Instead you could just use database.execute
+ *
+ * Not recommended to use because if you're not careful it can easily cause dependency leaks
+ */
+
+/**
+ * Mocking Services
+ * https://lucasbarake.com/courses/practical-effect/42
+ */
+
+/**
+ * Understanding MemoMap
+ * https://lucasbarake.com/courses/practical-effect/58
+ */
