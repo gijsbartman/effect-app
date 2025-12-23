@@ -11,7 +11,7 @@ import { Array, Clock, Duration, Effect, Option, Random, Scope } from "effect"
  */
 // cacheSuccessSWR(effectToCache, "1 minute"): Effect.Effect<Effect.Effect<A, E, R›, never, Scope.Scope>
 
-const cacheSuccessSWR = <A, E, R>(
+export const cacheSuccessSWR = <A, E, R>(
 	self: Effect.Effect<A, E, R>,
 	ttl: Duration.DurationInput
 ): Effect.Effect<Effect.Effect<A, E, R>, never, Scope.Scope> =>

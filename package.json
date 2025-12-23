@@ -7,13 +7,16 @@
 	"scripts": {
 		"build": "tsc",
 		"start": "node dist/index.js",
-		"dev": "tsx watch src/index.ts"
+		"dev": "tsx watch src/index.ts",
+		"test": "vitest"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"packageManager": "pnpm@10.16.1",
 	"devDependencies": {
+		"@effect/vitest": "^0.25.1",
+		"vitest": "^3.2.0",
 		"@effect/language-service": "^0.62.3",
 		"effect": "^3.19.12",
 		"tsx": "^4.21.0",
